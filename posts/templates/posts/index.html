@@ -1,0 +1,11 @@
+{% extends 'posts/layout.html' %}
+
+{% block content %}
+    {% for post in posts %}
+    <ul class = "list-group"></ul>
+        <li class = "list-group-item"><a href="/posts/{{post.id}}">{{post.Player_Name}} {{post.id}}</li></a>
+    {% endfor %}
+{% endblock %}
+
+
+
