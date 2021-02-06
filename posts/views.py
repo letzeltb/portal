@@ -9,7 +9,7 @@ def test(request):
 
 def index(request):
 
-    posts = Posts.objects.all()[:10]
+    posts = Posts.objects.all()[:25]
 
     context = {
         'Player_Name': 'Player Name',

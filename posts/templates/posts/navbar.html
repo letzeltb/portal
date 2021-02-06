@@ -1,7 +1,58 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="IE=11">
+  
+<link rel="shortcut icon" href="https://spteams.keybank.com/sites/RiskBlogs/SiteAssets/SitePages/Tableau/key.png"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+
 <html>
-<head>
-<title>Create a Post </title>
-</head>
+
+    <title>Brian Test Website</title>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container"> 	
+        <div class="container-fluid">
+            <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://localhost:8000/posts"><font color="white">Brian Website</a></font>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Post<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://localhost:8000/posts/navbar">Post Name</a></li>
+                        <li><a href="#">Page 1-2</a></li>
+                        <li><a href="#">Page 1-3</a></li>                 
+                    </ul>
+                    
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Link 2<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <ul></ul>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">Static Reports</li>
+                        <li><a href="#">Production Report #1</a></li>
+                        <li><a href="#">Production Report #2</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+          </div>
+    </nav>
+    </head>
+    
+    <div class="container">
 
 <body>
 <h1>Create a Post </h1>
@@ -9,8 +60,11 @@
 {% csrf_token %}
 Player_Name: <input type="text" name="Player_Name"/><br/>
 <input type="submit" value="Post"/>
+
 </form>
 
-</body>
+<a style="display:block" class="center-align" href="/posts">Back</a>
 
+</body>
+</div>
 </html>
